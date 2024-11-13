@@ -1,0 +1,145 @@
+body {
+    background-color: darkgray;
+}
+
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.form {
+    width: 30%;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(243, 235, 235), rgb(140, 136, 136), rgb(243, 235, 235));
+    box-shadow: 5px 3px 3px gray, -5px -3px 3px gray;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.Login input {
+    width: 95%;
+    height: 30px;
+    outline: none;
+    color: white;
+    background: rgb(143, 141, 141);
+    border-bottom: 5px solid rgb(90, 88, 88);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.Login input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+.Login a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.Login button {
+    background-color: black;
+    color: white;
+    outline: none;
+    font-size: 17px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.Login button:hover {
+    background-color: #333;
+    transition: 0.3s;
+}
+
+/* Responsive Styling */
+
+/* Tablets (700px and below) */
+@media (max-width: 700px) {
+    .form {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .Login input {
+        width: 100%;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .Login a {
+        font-size: 18px;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .Login button {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .signup-btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Login {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .Login input {
+        width: 100%;
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .Login a {
+        font-size: 16px;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .Login button {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
